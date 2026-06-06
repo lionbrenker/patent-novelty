@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patent Novelty</title>
+</head>
+<body>
+  <h1>Patent Novelty Viewer</h1>
+  <p>This website will show novelty values for patents.</p>
+
+  <input id="patentSearch" placeholder="Enter patent ID">
+  <button onclick="searchPatent()">Search</button>
+
+  <p id="result"></p>
+
+  <script>
+    function searchPatent() {
+      const patentId = document.getElementById("patentSearch").value;
+      document.getElementById("result").textContent =
+        "You searched for patent ID: " + patentId;
+    }
+  </script>
+</body>
+</html>
